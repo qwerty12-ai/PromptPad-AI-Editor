@@ -86,8 +86,8 @@ Now it stands as a fully functional AI prompt editor ready for future scalabilit
 ## 🧑‍💻 Author
 
 *Mohd Abdul Sabeeh*  
-Full-Stack Developer 
-📧 sabeeh.abdul@outlook.com  
+Full-Stack Developer • Hyderabad
+*📧 sabeeh.abdul@outlook.com*
 🌐 [LinkedIn](https://www.linkedin.com/in/mohd-abdul-sabeeh-38429a2ba) • [GitHub](https://github.com/qwerty12-ai/)
 
 ---
