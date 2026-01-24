@@ -1,5 +1,7 @@
 # 🚀 PromptPad — The Full-Stack Prompt Engineering Workspace
 
+[![Live demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://promptpad-ai-editor.vercel.app)
+
 **PromptPad** is a full-stack **Next.js** application built from scratch — a complete workspace for **prompt engineers**, **AI creators**, and **developers** who want to write, test, and analyze prompts in one place.
 
 This project was developed independently from the ground up — *idea → execution → UI/UX → database + authentication → debugging → final prototype*.
@@ -18,6 +20,16 @@ It lets you:
 - 🤖 Generate AI outputs directly using the *open-source [Puter.js](https://puter.com)* library  
 
 > Built for prompt engineers who actually build.
+
+---
+
+## 🌐 Live Production Deployment:
+
+🚀 **Live App:**
+https://promptpad-ai-editor.vercel.app
+
+> Deployed on **Vercel** with a production **MongoDB Atlas** cluster.
+> Environment variables, authentication and database connections are fully configured on production.
 
 ---
 
@@ -78,8 +90,9 @@ Now it stands as a fully functional AI prompt editor ready for future scalabilit
 
 ## 📎 Links
 
-🔗 Initial Prototype Post: [Initial prototype](https://www.linkedin.com/posts/mohd-abdul-sabeeh-38429a2ba_buildinpublic-nextjs-mernstack-activity-7393017755643465728-CGaJ)  
-🚀 Final Prototype Post: [Final Prototype](https://www.linkedin.com/posts/mohd-abdul-sabeeh-38429a2ba_nextjs-react-puterjs-activity-7394035822301384704-WWis)
+- 🌐 Live Production App: [Live link](https://promptpad-ai-editor.vercel.app)
+- 🔗 Initial Prototype Post: [Initial prototype](https://www.linkedin.com/posts/mohd-abdul-sabeeh-38429a2ba_buildinpublic-nextjs-mernstack-activity-7393017755643465728-CGaJ)  
+- 🚀 Final Prototype Post: [Final Prototype](https://www.linkedin.com/posts/mohd-abdul-sabeeh-38429a2ba_nextjs-react-puterjs-activity-7394035822301384704-WWis)
 
 ---
 
