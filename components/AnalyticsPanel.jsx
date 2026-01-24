@@ -31,7 +31,7 @@ const AnalyticsPanel = ({ stats: initialStats }) => {
     if (error) return <p className='p-4 text-red-500'>{error}</p>
 
     return (
-      <div className='p-4 border rounded bg-gray-50'>
+      <div className='p-4 border rounded bg-gray-50 text-black'>
         <h2 className='font-semibold mb-2'>Analytics</h2>
         <p>Total Prompts: {stats.totalPrompts ?? 0}</p>
         <p>Average Latency (ms) : {typeof stats.latency === "number" ? stats.latency.toFixed(2) : stats.latency ?? "-"}</p>

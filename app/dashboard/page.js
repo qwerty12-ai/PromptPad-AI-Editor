@@ -163,7 +163,7 @@ const Dashboard = () => {
           )}
 
           <div className="mt-8 bg-white p-4 rounded shadow-sm">
-            <h4 className="font-semibold mb-4 text-xl sm:text-2xl">Create a new prompt</h4>
+            <h4 className="font-semibold mb-4 text-xl sm:text-2xl text-black">Create a new prompt</h4>
             {/* <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2 mb-3">
               <label className="text-gray-600 font-medium mr-2">Choose Model:</label>
               <select
@@ -181,7 +181,7 @@ const Dashboard = () => {
               <input
                 type="text"
                 placeholder="Title"
-                className="border p-2 rounded w-full sm:w-1/3"
+                className="border p-2 rounded w-full sm:w-1/3 text-gray-500"
                 value={newPromptTitle}
                 onChange={(e) => setNewPromptTitle(e.target.value)}
               />
@@ -189,7 +189,7 @@ const Dashboard = () => {
 
             <textarea
               placeholder="Content"
-              className="border p-2 rounded w-full my-3 min-h-[100px]"
+              className="border p-2 rounded w-full my-3 min-h-25 text-gray-500"
               value={newPromptContent}
               onChange={(e) => setNewPromptContent(e.target.value)}
             />

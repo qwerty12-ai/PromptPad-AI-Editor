@@ -28,7 +28,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="w-full bg-gray-900 border-t border-gray-700 mt-8 py-4 px-4 sm:px-6 lg:px-8">
+    <footer className="w-full bg-gray-900 border-t border-gray-700 py-4 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-2 sm:gap-0">
         <p className="text-sm text-gray-400">
           © {new Date().getFullYear()} <strong>PromptPad</strong> — Built by{" "}
@@ -43,7 +43,7 @@ const Footer = () => {
         </p>
 
         <p className="text-xs text-gray-400">
-          Creation Time (IST): {currentTime}
+          Time (IST): {currentTime}
         </p>
 
         <p className="text-sm text-gray-400">

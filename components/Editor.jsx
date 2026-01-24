@@ -69,21 +69,21 @@ const Editor = ({ prompt, onSave, fetchAnalytics, toggleCompare, isCompared }) =
     <>
     
     <div className="flex flex-col gap-3">
-      <h3 className="font-semibold mb-3 text-3xl">Edit Selected Prompt<p className="bg-yellow-100 border-l-4 border-yellow-400 text-yellow-800 p-2 mt-1 rounded-md text-sm sm:text-base max-w-2xl text-center font-light">
+      <h3 className="font-semibold mb-3 text-3xl text-black">Edit Selected Prompt<p className="bg-yellow-100 border-l-4 border-yellow-400 text-yellow-800 p-2 mt-1 rounded-md text-sm sm:text-base max-w-2xl text-center font-light">
           ⚠️ <strong>Note:</strong> (ensure to "save" the title and content after u written it or edited it before u "generate output")
         </p></h3>
       <input
         value={localTitle}
         onChange={(e) => setLocalTitle(e.target.value)}
         placeholder="Prompt title"
-        className="border rounded px-3 py-2"
+        className="border rounded px-3 py-2 text-gray-500"
       />
 
       <textarea
         value={localContent}
         onChange={(e) => setLocalContent(e.target.value)}
         placeholder="Write your prompt here..."
-        className="border p-3 rounded w-full h-40 resize-y"
+        className="border p-3 rounded w-full h-40 resize-y text-gray-500"
       />
 
       <div className="flex flex-col sm:flex-row items-center gap-3">

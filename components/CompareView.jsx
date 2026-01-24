@@ -38,24 +38,24 @@ const CompareView = ({ selectedIds = [] }) => {
     const orderedPrompts = selectedIds.map((id) => prompts.find((p) => String(p._id) === String(id))).filter(Boolean);
 
     return (<>
-        <div className="mt-3 font-semibold text-3xl">Compare Prompts</div>
+        <div className="mt-3 font-semibold text-3xl text-black">Compare Prompts</div>
         <div className='p-4'>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {orderedPrompts.map((prompt) => (
                     <div key={prompt._id} className='p-4 border rounded bg-white min-h-40'>
                         <div className="flex items-center justify-between">
-                            <h3 className="font-semibold text-lg">{prompt.title || "Untitled"}</h3>
+                            <h3 className="font-semibold text-lg text-black">{prompt.title || "Untitled"}</h3>
                             <div className="text-xs text-gray-500">{prompt.createdAt ? new Date(prompt.createdAt).toLocaleDateString() : null}</div>
                         </div>
 
                         <div className='mt-3'>
                             <h4 className='font-medium text-sm text-gray-700'>Prompt</h4>
-                            <pre className='whitespace-pre-wrap mt-1 bg-gray-50 p-3 rounded text-sm wrap-break-word'>{prompt.content}</pre>
+                            <pre className='whitespace-pre-wrap mt-1 bg-gray-50 p-3 rounded text-sm wrap-break-word text-black'>{prompt.content}</pre>
                         </div>
 
                         <div className="mt-3">
                             <h4 className='font-medium text-sm text-gray-700'>Output</h4>
-                            <pre className='whitespace-pre-wrap mt-1 bg-gray-50 p-3 rounded text-sm wrap-break-word'>{prompt.output || "-No output-"}</pre>
+                            <pre className='whitespace-pre-wrap mt-1 bg-gray-50 p-3 rounded text-sm wrap-break-word text-black'>{prompt.output || "-No output-"}</pre>
                         </div>
                     </div>       
                 ))}
