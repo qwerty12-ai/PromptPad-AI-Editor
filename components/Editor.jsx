@@ -127,9 +127,9 @@ const Editor = ({ prompt, onSave, fetchAnalytics, toggleCompare, isCompared }) =
       </div>
 
       <div>
-        <h4 className="font-medium mb-1 text-lg">AI Output</h4>
+        <h4 className="font-medium mb-1 text-lg text-black">AI Output</h4>
         {prompt.output ? (
-          <pre className="bg-gray-50 rounded p-3 whitespace-pre-wrap wrap-break-word">
+          <pre className="bg-gray-50 rounded p-3 whitespace-pre-wrap wrap-break-word text-black">
             {prompt.output}
           </pre>
         ) : (
