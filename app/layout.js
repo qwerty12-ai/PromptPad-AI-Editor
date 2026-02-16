@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import SessionWrapper from "@/components/SessionWrapper";
 import Script from "next/script";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +25,7 @@ export const metadata = {
   keywords: [
     "AI prompts",
     "prompt engineering",
-    "OpenAI",
+    "PuterAI",
     "GPT",
     "prompt editor",
     "prompt analytics",
@@ -45,11 +46,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+
         <SessionWrapper>
           <Navbar />
           {children}
           <Footer />
         </SessionWrapper>
+
+        <Analytics />
         
       </body>
     </html>
