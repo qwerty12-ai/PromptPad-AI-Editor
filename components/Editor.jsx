@@ -44,7 +44,18 @@ const Editor = ({ prompt, onSave, fetchAnalytics, toggleCompare, isCompared }) =
       setLoadingOutput(true)
 
       const resp = await window.puter.ai.chat([{role: "user", content: localContent}])
-      const out = resp?.message?.content ?? resp?.output_text ?? resp?.output ??  ""
+      let out = ""
+      if(typeof resp === "string") {
+        out = resp
+      } else if (resp?.message?.content?.[0]?.text) {
+        out = resp.message.content[0].text
+      } else if (resp?.output_text) {
+        out = resp.output_text
+      } else if (resp?.text) {
+        out = resp.text
+      } else {
+        out = JSON.stringify(resp)
+      }
 
       onSave({...prompt, output: out, content: localContent})
 
@@ -71,7 +82,11 @@ const Editor = ({ prompt, onSave, fetchAnalytics, toggleCompare, isCompared }) =
     <div className="flex flex-col gap-3">
       <h3 className="font-semibold mb-3 text-3xl text-black">Edit Selected Prompt<p className="bg-yellow-100 border-l-4 border-yellow-400 text-yellow-800 p-2 mt-1 rounded-md text-sm sm:text-base max-w-2xl text-center font-light">
           ⚠️ <strong>Note:</strong> (ensure to "save" the title and content after u written it or edited it before u "generate output")
-        </p></h3>
+        </p>
+        <p className="bg-yellow-100 border-l-4 border-yellow-400 text-yellow-800 p-2 mt-1 rounded-md text-sm sm:text-base max-w-2xl text-center font-light">
+          ⚠️ <strong>AI Generation Notice:</strong> To generate AI outputs, first-time users must create/login to a Puter account when prompted. After authentication, users can generate AI outputs seamlessly inside PromptPad.
+        </p>
+        </h3>
       <input
         value={localTitle}
         onChange={(e) => setLocalTitle(e.target.value)}

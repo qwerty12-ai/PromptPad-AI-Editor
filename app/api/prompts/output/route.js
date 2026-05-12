@@ -17,7 +17,7 @@ export async function POST(req) {
 
         const updated = await Prompt.findByIdAndUpdate(
             promptId,
-            {output},
+            {output: typeof output === "string" ? output : JSON.stringify(output)},
             {new: true}
         )
 
