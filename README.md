@@ -586,19 +586,11 @@ Ollama • Qwen 3:4B • BullMQ • Redis Pub/Sub • Server-Sent Events • pyt
 
 ---
 
-## 📈 Contribution Activity
+📈 Contribution Activity
 
-<div align="center">
+<div align="center">Consistency. Progress. Products over promises.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/qwerty12-ai/qwerty12-ai/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/qwerty12-ai/qwerty12-ai/output/github-contribution-grid-snake.svg">
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/qwerty12-ai/qwerty12-ai/output/github-contribution-grid-snake-dark.svg" width="100%"/>
-</picture>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=qwerty12-ai&theme=react-dark&hide_border=true&area=true" alt="Activity graph" width="100%"/>
-
-</div>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=qwerty12-ai&bg_color=0d1117&color=58a6ff&line=7c3aed&point=58a6ff&area=true&hide_border=true&custom_title=Contribution%20Activity" alt="GitHub contribution activity graph" width="100%"/></div>
 
 ---
 
